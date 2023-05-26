@@ -16,6 +16,7 @@
     "prettier": "^2.1.2"
   },
   "scripts": {
+    "build": "mkdir -p ./src/vendor/bootstrap; cp -r ./node_modules/bootstrap/dist/ ./src/vendor/bootstrap",
     "autoprefixer": "postcss src/css/**/*.css src/modules/**/*.css !src/**/_layout.css !src/**/_normalize.css !src/**/_reset.css !src/**/_macros.css !src/**/main.css !src/**/theme-overrides.css --use autoprefixer --replace --no-map",
     "eslint": "eslint src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
@@ -24,5 +25,8 @@
   "browserslist": [
     "defaults",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3"
+  }
 }
