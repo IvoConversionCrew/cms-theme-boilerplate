@@ -32,6 +32,8 @@
 
 {% set container_width = theme.spacing.maximum_content_width ~ 'px' %}
 {% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '1rem' %}
+{% set bootstrap_gutter_x = theme.spacing.bootstrap_gutter_x ~ 'rem ' ~ '1.5rem' %}
+{% set bootstrap_gutter_y = theme.spacing.bootstrap_gutter_y ~ 'rem ' ~ '0' %}
 
 /* 1b. Colors */
 
@@ -153,13 +155,13 @@
 {##################   2. Containers / Grid / DND areas   ###################}
 {###########################################################################}
 
-.content-wrapper {
-  max-width: {{ container_width }};
+:root {
+  --bs-gutter-x: {{ bootstrap_gutter_x }};
+  --bs-gutter-y: {{ bootstrap_gutter_y }};
 }
 
-.dnd-section,
-.content-wrapper--vertical-spacing {
-  padding: {{ dnd_section_padding }};
+.content-wrapper {
+  max-width: {{ container_width }};
 }
 
 .dnd-section > .row-fluid {
