@@ -7,6 +7,7 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
+    amd: true,
   },
   rules: {
     'accessor-pairs': 'off',
