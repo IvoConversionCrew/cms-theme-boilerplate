@@ -101,26 +101,91 @@
     "type": "group",
     "children": [
       {
-        "label": "Bootstrap gutter X",
-        "name": "bootstrap_gutter_x",
-        "type": "number",
-        "display": "slider",
-        "max": 10,
-        "min": 0,
-        "step" : 0.5,
-        "suffix": "rem",
-        "default": 1.5
+        "label": "Desktop",
+        "name": "desktop",
+        "type": "group",
+        "children": [
+          {
+            "label": "Bootstrap gutter X",
+            "name": "bootstrap_gutter_x",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 1.5
+          },
+          {
+            "label": "Bootstrap gutter Y",
+            "name": "bootstrap_gutter_y",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 0
+          },
+        ]
       },
       {
-        "label": "Bootstrap gutter Y",
-        "name": "bootstrap_gutter_y",
-        "type": "number",
-        "display": "slider",
-        "max": 10,
-        "min": 0,
-        "step" : 0.5,
-        "suffix": "rem",
-        "default": 0
+        "label": "Tablet",
+        "name": "tablet",
+        "type": "group",
+        "children": [
+          {
+            "label": "Bootstrap gutter X",
+            "name": "bootstrap_gutter_x",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 1.5
+          },
+          {
+            "label": "Bootstrap gutter Y",
+            "name": "bootstrap_gutter_y",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 0
+          },
+        ]
+      },
+      {
+        "label": "Mobile",
+        "name": "mobile",
+        "type": "group",
+        "children": [
+          {
+            "label": "Bootstrap gutter X",
+            "name": "bootstrap_gutter_x",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 1.5
+          },
+          {
+            "label": "Bootstrap gutter Y",
+            "name": "bootstrap_gutter_y",
+            "type": "number",
+            "display": "slider",
+            "max": 10,
+            "min": 0,
+            "step" : 0.5,
+            "suffix": "rem",
+            "default": 0
+          },
+        ]
       },
       {
         "label": "Vertical spacing",
