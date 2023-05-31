@@ -101,6 +101,26 @@
     "type": "group",
     "children": [
       {
+        "label": "Bootstrap gutter X",
+        "name": "bootstrap_gutter_x",
+        "type": "number",
+        "display": "slider",
+        "max": 10,
+        "min": 0,
+        "suffix": "rem",
+        "default": 1.5
+      },
+      {
+        "label": "Bootstrap gutter Y",
+        "name": "bootstrap_gutter_y",
+        "type": "number",
+        "display": "slider",
+        "max": 10,
+        "min": 0,
+        "suffix": "rem",
+        "default": 0
+      },
+      {
         "label": "Vertical spacing",
         "name": "vertical_spacing",
         "type": "number",
@@ -118,7 +138,7 @@
         "max": 2500,
         "min": 900,
         "suffix": "px",
-        "default": 1240
+        "default": 1320
       }
     ]
   },
