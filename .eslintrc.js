@@ -1,14 +1,10 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
   root: true,
   env: {
     browser: true,
     node: true,
-    es6: true,
-    amd: true,
   },
+  ignorePatterns: ['**/vendor/bootstrap/js/*.js'],
   rules: {
     'accessor-pairs': 'off',
     'array-bracket-newline': 'off',

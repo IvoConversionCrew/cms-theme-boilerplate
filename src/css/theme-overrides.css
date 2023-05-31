@@ -32,8 +32,12 @@
 
 {% set container_width = theme.spacing.maximum_content_width ~ 'px' %}
 {% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '1rem' %}
-{% set bootstrap_gutter_x = theme.spacing.bootstrap_gutter_x ~ 'rem' %}
-{% set bootstrap_gutter_y = theme.spacing.bootstrap_gutter_y ~ 'rem' %}
+{% set bootstrap_desktop_gutter_x = theme.spacing.bootstrap.desktop.bootstrap_gutter_x ~ 'rem' %}
+{% set bootstrap_desktop_gutter_y = theme.spacing.bootstrap.desktop.bootstrap_gutter_y ~ 'rem' %}
+{% set bootstrap_tablet_gutter_x = theme.spacing.bootstrap.tablet.bootstrap_gutter_x ~ 'rem' %}
+{% set bootstrap_tablet_gutter_y = theme.spacing.bootstrap.tablet.bootstrap_gutter_y ~ 'rem' %}
+{% set bootstrap_mobile_gutter_x = theme.spacing.bootstrap.mobile.bootstrap_gutter_x ~ 'rem' %}
+{% set bootstrap_mobile_gutter_y = theme.spacing.bootstrap.mobile.bootstrap_gutter_y ~ 'rem' %}
 
 /* 1b. Colors */
 
@@ -157,8 +161,26 @@
 
 :root,
 .container-fluid {
-  --bs-gutter-x: {{ bootstrap_gutter_x }};
-  --bs-gutter-y: {{ bootstrap_gutter_y }};
+  --bs-gutter-x: {{ bootstrap_desktop_gutter_x }};
+  --bs-gutter-y: {{ bootstrap_desktop_gutter_y }};
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  :root,
+  .container-fluid {
+    --bs-gutter-x: {{ bootstrap_mobile_gutter_x }};
+    --bs-gutter-y: {{ bootstrap_mobile_gutter_y }};
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  :root,
+  .container-fluid {
+    --bs-gutter-x: {{ bootstrap_tablet_gutter_x }};
+    --bs-gutter-y: {{ bootstrap_tablet_gutter_y }};
+  }
 }
 
 .content-wrapper {
